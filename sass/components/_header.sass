@@ -1,0 +1,63 @@
+@import '../_vars'
+.header
+    height: 832px
+    @include img('../img/hero.png',100%,832px)
+    &-gradient
+        height: 832px
+        background: linear-gradient(100.08deg, rgba(5, 28, 81, 0.7) 0.08%, rgba(0, 0, 0, 0.25) 81.6%)
+    &__btn
+        display: none
+.menu
+    height: 167px
+    background: rgba(255, 255, 255, 0.8)
+    &-box
+        display: flex
+        justify-content: space-between
+        padding-top: 27px
+    &__logo
+        display: flex
+        &-img
+            @include img('../img/cats.png', 99px,99px)
+        &-text
+            font-size: 22px
+            font-weight: 500
+            position: relative
+            top: 50px
+            left: -20px
+    &__list
+        margin-top: 50px
+        margin-right: 70px
+        li
+            display: inline-block
+            font-size: 20px
+            margin-right: 30px
+            transition: all 0.3s
+            a
+                text-decoration: none
+            h3
+                font-weight: 400
+                color: #000
+            h3:hover
+                font-weight: 600
+
+    &__soc
+        &-tel
+            display: flex
+            margin-bottom: 10px
+            &-logo
+                @include img('../img/a1.png', 25px, 25px)
+                margin-right: 4px
+            &-wrp
+                margin-top: 2px
+            &-phone
+                font-size: 20px
+                text-decoration: none
+                color: #000
+        &-adress
+            margin-bottom: 22px
+            font-size: 18px
+            line-height: 22.34px
+        &-time
+            font-size: 18px
+#fi
+    margin-right: 0
