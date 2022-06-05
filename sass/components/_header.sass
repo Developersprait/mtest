@@ -31,15 +31,14 @@
             display: inline-block
             font-size: 20px
             margin-right: 30px
-            transition: all 0.3s
             a
                 text-decoration: none
             h3
                 font-weight: 400
                 color: #000
+                transition: all 0.3s
             h3:hover
                 font-weight: 600
-
     &__soc
         &-tel
             display: flex
@@ -54,10 +53,54 @@
                 text-decoration: none
                 color: #000
         &-adress
-            margin-bottom: 22px
+            margin-bottom: 10px
             font-size: 18px
             line-height: 22.34px
         &-time
             font-size: 18px
 #fi
     margin-right: 0
+.htext 
+    margin-bottom: 50px    
+.hero
+    &-items
+        display: flex
+    &__item
+        &-left
+            width: 653px
+            margin-top: 76px
+            color: #fff
+            &-title
+                margin-bottom: 50px
+                font-weight: 600
+                font-size: 48px
+            &-text
+                font-size: 20px
+                margin-bottom: 30px
+                width: 603px
+            &-btn
+                button
+                    margin-top: 20px
+                    width: 276px
+                    height: 60px
+                    background: $yellow
+                    border: none
+                    color: #000
+                    border-radius: 5px
+                    font-size: 20px
+                    font-weight: 500
+        &-right
+            display: flex
+            justify-content: space-between
+            &-img
+                position: absolute
+                margin-top: 44px
+#b1
+    @include img('../img/bag2.png',456px, 506px)
+    left: 770px
+#b2
+    @include img('../img/bag3.png',505px, 505px)
+    left: 1120px
+#b3
+    @include img('../img/bag1.png',573px, 573px)
+    left: 900px
