@@ -1,4 +1,22 @@
 @import '../_vars'
+@-moz-keyframes spin
+  from
+    -moz-transform: rotate(0deg)
+  to
+    -moz-transform: rotate(360deg)
+
+@-webkit-keyframes spin
+  from
+    -webkit-transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(360deg)
+
+@keyframes spin
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)
+
 .catalog
     background: $bg
     &__top
@@ -18,14 +36,87 @@
             border: 2px solid $yellow
             border-radius: 5px
             font-size: 20px
+            transition: all 0.3s
         &-btn:hover
             background: $yellow
             border: none
             color: #000
+
+    &__carts
+        display: flex
+        &-left
+            margin-right: 30px
+    &__btn
+        text-align: center
+        margin-top: 40px
+        padding-bottom: 99px
+        &-wrp
+            display: flex
+            width: 388px
+            margin: 0 auto
+        &-inner
+            width: 330px
+            height: 60px
+            bottom: none
+            background: #fff
+            font-weight: 500
+            border: 2px solid $yellow
             border-radius: 5px
             font-size: 20px
-            font-weight: 500
             transition: all 0.3s
+        &-inner:hover
+            background: $yellow
+            color: #000
+            cursor: pointer
+        &-load
+            @include img('../img/load.svg',38px,38px)
+            margin-left: 20px
+            margin-top: 10px
+            animation: 2s linear 0s normal none infinite spin
+            -webkit-animation: 2s linear 0s normal none infinite spin
+            -moz-animation: 2s linear 0s normal none infinite spin
+.none
+    display: none
+.active
+    display: block                
+
+.cart
+    width: 685px
+    height: 497px
+    background: #fff
+    padding: 50px
+    transition: all 0.3s
+    margin-bottom: 30px
+    &__top
+        margin-bottom: 27px
+    &__top,
+    &__bottom
+        display: flex
+    &__title
+        margin-right: 77px
+        color: #051C51
+        font-size: 20px
+    &__price
+        color: #4F8C00
+        font-size: 20px
+    &__info
+        margin-top: 27px
+    &-desc
+        color: #0F0F0F
+        font-size: 20px
+        margin-bottom: 5px
+        font-weight: normal
+    &-val
+        margin-bottom: 20px
+        color: #051C51
+        font-weight: 500
+        font-size: 20px
+    &__img
+        @include img('../img/bag4.png',312px,375px)
+    &-btn
+        margin-top: 50px
+.cart:hover
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2)
 
 .btn1
     margin-right: 30px
