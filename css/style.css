@@ -7,6 +7,16 @@
   overflow-x: clip;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #051C51;
+}
+
+h3 {
+  font-weight: 400;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -434,4 +444,57 @@
   width: 35px;
   height: 35px;
   margin-right: 30px;
+}
+
+.form1 {
+  height: 450px;
+  background: url("../img/form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+}
+.form1__gradient {
+  height: 450px;
+  background: linear-gradient(135.2deg, rgba(5, 28, 81, 0.7) 0.68%, rgba(0, 0, 0, 0.25) 91.59%);
+}
+.form1__wrp {
+  display: flex;
+  padding-top: 100px;
+}
+.form1__left {
+  margin-right: 70px;
+}
+.form1__title {
+  margin-bottom: 30px;
+}
+.form1__title, .form1__text {
+  color: #fff;
+}
+.form1__right form {
+  width: 566px;
+}
+.form1__right input[type=text] {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+.form1__right input[type=submit] {
+  width: 312px;
+  height: 60px;
+  background: #F5AA17;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.form1__right input[type=submit]:hover {
+  background: #c9870e;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

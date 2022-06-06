@@ -1,0 +1,42 @@
+@import '../_vars'
+
+.form1
+    height: 450px
+    @include img('../img/form.jpg',100%,450px)
+    &__gradient
+        height: 450px
+        background: linear-gradient(135.2deg, rgba(5, 28, 81, 0.7) 0.68%, rgba(0, 0, 0, 0.25) 91.59%)
+    &__wrp
+        display: flex
+        padding-top: 100px
+    &__left
+        margin-right: 70px
+    &__title
+        margin-bottom: 30px
+    &__title,
+    &__text
+        color: #fff
+    &__right
+        form
+            width: 566px   
+        input[type="text"]
+            width: 100%
+            height: 60px
+            border: none
+            border-radius: 5px
+            margin-bottom: 20px  
+            padding-left: 24px
+        input[type="submit"]
+            width: 312px
+            height: 60px
+            background: $yellow
+            color: #000
+            border: none
+            border-radius: 5px
+            font-weight: 500
+            font-size: 20px
+            margin-top: 20px
+        input[type="submit"]:hover
+            background: #c9870e
+            cursor: pointer
+
