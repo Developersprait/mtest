@@ -1,0 +1,44 @@
+@import '../_vars'
+.clients
+    height: 800px
+    background: #e3e3e3
+    &__wrp
+        padding-top: 100px
+    &__title
+        margin-bottom: 80px
+
+.slider
+    width: 1425px
+    height: 500px
+    display: flex
+    &__item
+        width: 447px
+        height: 481px
+        background: #fff
+        transition: all 0.3s
+        padding: 50px
+        margin-right: 30px
+    &__item:hover
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2)
+    &__stars
+        @include img('../img/stars.svg',100px,20px)
+        margin-bottom: 20px
+    &__text
+        width: 300px
+        margin-bottom: 10px
+    &__more
+        a
+            text-decoration: none
+            color: #666
+#sl1
+    @include img('../img/clients/c1.png',150px,150px) 
+    border-radius: 50%      
+#sl2
+    @include img('../img/clients/c2.png',150px,150px) 
+    border-radius: 50%    
+#sl3
+    @include img('../img/clients/c3.png',150px,150px) 
+    border-radius: 50%    
+#sl4
+    @include img('../img/clients/c4.jpg',150px,150px) 
+    border-radius: 50%                     

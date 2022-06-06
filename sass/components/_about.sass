@@ -1,0 +1,38 @@
+@import '../_vars'
+.about
+    height: 1066px
+    background: #fff
+    &__wrp
+        padding-top: 100px
+    &__title
+        margin-bottom: 77px    
+    &__items
+        display: grid
+        grid-template-columns: 300px 500px 300px    
+        gap: 50px
+        justify-content: center
+    &__item
+        &-img
+            width: 150px
+            height: 150px
+            border-radius: 50%     
+            margin: 0 auto
+        &-subtitle
+            text-align: center
+            color:#051C51
+            font-weight: 500        
+            margin-top: 17px
+            margin-bottom: 20px        
+#ab1
+    @include img('../img/about/ab1.png',150px,150px)          
+#ab2
+    @include img('../img/about/ab2.png',150px,150px) 
+    background-position-x: 100%   
+#ab3
+    @include img('../img/about/ab3.png',150px,150px)    
+#ab4
+    @include img('../img/about/ab4.png',150px,150px)    
+#ab5
+    @include img('../img/about/7.png',150px,150px)    
+#ab6
+    @include img('../img/about/ab6.png',150px,150px)                          
