@@ -1,0 +1,35 @@
+.adv
+    padding-top: 100px
+    &__title
+        font-weight: 600
+        font-size: 48px
+        color: #051C51
+        margin-bottom: 80px
+    &__wrp
+        display: flex
+        height: 600px
+    &__list1
+        width: 42%    
+    &__list,
+    &__list1
+        li
+            margin-bottom: 50px
+            width: 478px
+            font-size: 20px
+            display: flex
+        span
+            width: 410px    
+            font-size: 20px
+    &__img1
+        @include img('../img/bag3.png',463px,480px)
+        position: relative
+        top: -80px
+        left: -62px
+    &__img2
+        @include img('../img/bag3.png',376px,379px) 
+        position: relative          
+        top: -400px
+        left: 100px  
+.check
+    @include img("../img/check.svg", 35px, 35px)
+    margin-right: 30px
