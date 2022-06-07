@@ -52,16 +52,23 @@
                 font-size: 20px
                 text-decoration: none
                 color: #000
+        &-tel2,
+        &-tel3
+            display: none
         &-adress
             margin-bottom: 10px
             font-size: 18px
-            line-height: 22.34px
+            width: 170px
         &-time
             font-size: 18px
+    &__tab
+        display: flex
 #fi
     margin-right: 0
-.htext 
-    margin-bottom: 50px    
+.htext
+    margin-bottom: 50px
+.btnmob
+    display: none
 .hero
     &-items
         display: flex
@@ -70,20 +77,20 @@
             width: 653px
             margin-top: 76px
             color: #fff
+            margin-right: 100px
             &-title
                 margin-bottom: 50px
                 font-weight: 600
                 font-size: 48px
+                color: #fff
             &-text
                 font-size: 20px
                 margin-bottom: 30px
                 width: 603px
         &-right
-            display: flex
-            justify-content: space-between
-            &-img
-                position: absolute
-                margin-top: 44px
+            @include img('../img/bags.svg',883px,579px)
+            margin-top: 43px
+
 #b1
     @include img('../img/bag2.png',456px, 506px)
     left: 770px
@@ -93,3 +100,133 @@
 #b3
     @include img('../img/bag1.png',573px, 573px)
     left: 900px
+@media screen and (max-width: 770px)
+    .header
+        height: 1160px
+    .menu
+        height: 129px
+        &-box
+            padding-top: 0
+        &__list
+            margin: 0
+            ul
+                margin: 0 auto
+                display: none
+                position: absolute
+                left: 26%
+                right: 7%
+                z-index: 50
+                top: 129px
+            li
+                display: block
+                text-align: center
+                width: 300px
+                margin-bottom: 3px
+            a
+                display: block
+                background-color: #fff
+                color: #fff
+                padding: 15px 0
+        &__soc
+            display: flex
+            &-tel
+                display: none
+            &-tel2
+                display: block
+                align-self: center
+                padding-top: 25px
+
+        &__adr
+            margin-right: 46px
+            padding-top: 30px
+    .hero
+        &-items
+            display: block
+        &__item
+            &-right
+                width: 654px
+                height: 445px
+    .header__btn
+        display: block
+        margin-bottom: 21px
+        font-size: 27px
+        text-align: right
+    .btnmob
+        display: none
+@media screen and (max-width: 400px)
+    .menu
+        height: 167px
+        &-box
+            display: block
+            height: 167px
+        &__logo
+            &-img
+                width: 67px
+                height: 67px
+            &-text
+                font-size: 18px
+                top: 30px
+                left: -15px
+                line-height: 20px
+            &-void
+                flex: 1
+        &__list
+            ul
+                left: 0
+                right: 0        
+                top: 167px
+                li
+                    width: 100%
+        &__adr
+            padding-top: 0
+            width: 300px
+            margin-right: 0
+        &__tab
+            display: none
+        &__soc
+            &-tel2
+                display: none
+            &-tel3
+                display: flex
+                a
+                    font-size: 14px
+            &-adress
+                margin-bottom: 5px
+                width: 265px
+            &-time
+                margin-bottom: 12px
+            &-adress,
+            &-time
+                font-size: 14px
+    .btnmob2
+        display: none
+    .btnmob
+        display: block
+    .header
+        height: 953px
+        &__btn
+            display: block
+            position: relative
+            font-size: 35px
+            margin-bottom: 0
+            margin-top: 13px
+            margin-left: 82px
+    .hero
+        &__item
+            &-left
+                &-title
+                    font-size: 33px
+                    width: 256px
+                    margin-bottom: 20px
+                &-text
+                    width: 273px
+                    font-size: 16px
+                    margin-bottom: 20px
+                &-btn
+                    width: auto
+            &-right
+                width: 300px
+                height: 212px
+    .button
+        margin-top: 0
+        width: 276px

@@ -79,7 +79,7 @@
 .none
     display: none
 .active
-    display: block                
+    display: block
 
 .cart
     width: 685px
@@ -97,9 +97,12 @@
         margin-right: 77px
         color: #051C51
         font-size: 20px
-    &__price
+    &__price,
+    &__price2
         color: #4F8C00
         font-size: 20px
+    &__price2
+        display: none    
     &__info
         margin-top: 27px
     &-desc
@@ -130,3 +133,68 @@
     transition: all 0.3s
 .btn1:hover
     background: #c9870e
+@media screen and (max-width: 770px)
+    .catalog
+        &__top
+            flex-wrap: wrap
+            &-title
+                margin-bottom: 50px
+        &__carts
+            display: block
+            &-left
+                margin-top: 50px
+                margin-right: 0
+            &-right
+                display: none
+    .cart
+        margin: 0 auto
+        margin-bottom: 30px
+@media screen and (max-width: 400px)
+    .catalog
+        &__top
+            display: block
+            margin-bottom: 30px
+            &-title
+                margin-right: 0
+                font-size: 33px
+        &__carts
+            width: 272px       
+            margin: 0 auto
+        &__btn
+            padding-bottom: 50px
+            &-wrp
+                width: 295px
+            &-inner
+                width: 216px  
+    .cart
+        width: 272px
+        height: 642px
+        padding: 25px
+        &__top
+            margin-bottom: 10px
+        &__title
+            margin-right: 0
+            display: block
+            font-size: 16px 
+            width: 186px
+        &__price
+            display: none      
+        &__price2
+            display: block    
+            font-weight: 500
+            font-size: 16px
+        &__bottom
+            display: block    
+        &__img
+            width: 204px
+            height: 253px    
+        &-desc
+            font-size: 16px   
+        &-val
+            font-size: 16px   
+            margin-bottom: 10px
+        &-btn
+            width: 222px   
+            margin-top: 20px       
+    .btn1
+        margin-bottom: 30px            
