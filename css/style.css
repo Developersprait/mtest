@@ -951,4 +951,121 @@ h3 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.map {
+  height: 718px;
+  background: url("../img/m1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 718px;
+}
+.map__gradient {
+  background: linear-gradient(89.77deg, rgba(5, 28, 81, 0.7) 0.2%, rgba(0, 0, 0, 0.25) 82.4%);
+  height: 100%;
+}
+.map__wrp {
+  display: flex;
+  padding-top: 45px;
+}
+.map__left {
+  width: 610px;
+  padding-top: 55px;
+  margin-right: 100px;
+}
+.map__title {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.map__subtitle {
+  font-weight: 600;
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.map ul {
+  color: #fff;
+}
+.map ul h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.map ul li {
+  display: flex;
+  padding-left: 10px;
+}
+.map ul li h3 {
+  margin-left: 5px;
+}
+
+.footer {
+  height: 533px;
+}
+.footer__wrp {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+.footer__item p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.footer__link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.footer__list li {
+  margin-bottom: 10px;
+}
+.footer__list li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+.footer__box {
+  margin-bottom: 30px;
+}
+.footer__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.footer__phone {
+  display: flex;
+  margin-bottom: 6px;
+}
+.footer__phone-img1 {
+  background: url("../img/a1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+.footer__phone-img2 {
+  background: url("../img/tel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+.footer__phone-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+.footer__mail a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+
+.f {
+  padding-top: 50px;
 }/*# sourceMappingURL=style.css.map */

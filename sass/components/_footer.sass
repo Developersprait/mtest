@@ -1,0 +1,50 @@
+@import "../vars"
+.footer
+    height: 533px
+    &__wrp
+        display: flex
+        justify-content: space-between
+        padding-top: 100px
+    &__item
+        p
+            margin-bottom: 20px
+            font-size: 18px
+    &__link
+        a
+            text-decoration: none
+            color: #000
+            font-size: 18px
+    &__list
+        li
+            margin-bottom: 10px
+            a
+                text-decoration: none
+                font-size: 20px
+                color: #000
+    &__box
+        margin-bottom: 30px
+    &__subtitle
+        font-size: 20px
+        font-weight: 500
+        margin-bottom: 10px
+    &__phone
+        display: flex
+        margin-bottom: 6px
+        &-img1
+            @include img('../img/a1.png',25px, 25px)
+            margin-right: 8px
+        &-img2
+            @include img('../img/tel.png',25px, 25px)
+            margin-right: 8px
+        &-link
+            text-decoration: none
+            font-size: 18px
+            color: #000
+    &__mail
+        a
+            text-decoration: none
+            font-size: 18px
+            color: #000
+
+.f
+    padding-top: 50px
