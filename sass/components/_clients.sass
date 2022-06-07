@@ -10,7 +10,22 @@
 .slider
     width: 1425px
     height: 500px
-    display: flex
+    text-align: center
+    padding-left: 50px
+    &__wrapper
+        width: 100%
+    &__items
+        display: flex
+        position: relative
+    &__slide
+        transition: opacity 1s ease-in
+        opacity: 0
+        position: absolute
+        z-index: 2
+        left: 0
+        top: 0
+        display: flex
+        width: 100%
     &__item
         width: 447px
         height: 481px
@@ -26,19 +41,63 @@
     &__text
         width: 300px
         margin-bottom: 10px
+        text-align: left
+    &__img
+        float: right    
     &__more
+        text-align: left
         a
             text-decoration: none
             color: #666
+    &__box
+        display: flex
+        justify-content: end        
+    &__name
+        color: #051C51    
+        align-self: end
+.sim-slider-arrow-left,
+.sim-slider-arrow-right
+    width: 22px
+    height: 40px
+    cursor: pointer
+    opacity: 0.6
+    z-index: 4
+
+.sim-slider-arrow-left
+    left: 111px
+    display: block
+    position: absolute
+    width: 11px
+    height: 38px
+    margin-top: 212px
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat 
+    background-size: contain
+
+.sim-slider-arrow-right
+    position: absolute
+    right: 600px
+    margin-top: 225px
+    width: 11px
+    height: 38px
+    display: block
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat 
+    background-size: contain
+
+.sim-slider-arrow-left:hover
+    opacity: 1.0
+
+.sim-slider-arrow-right:hover
+    opacity: 1.0
+
 #sl1
-    @include img('../img/clients/c1.png',150px,150px) 
-    border-radius: 50%      
+    @include img('../img/clients/c1.png',150px,150px)
+    border-radius: 50%
 #sl2
-    @include img('../img/clients/c2.png',150px,150px) 
-    border-radius: 50%    
+    @include img('../img/clients/c2.png',150px,150px)
+    border-radius: 50%
 #sl3
-    @include img('../img/clients/c3.png',150px,150px) 
-    border-radius: 50%    
+    @include img('../img/clients/c3.png',150px,150px)
+    border-radius: 50%
 #sl4
-    @include img('../img/clients/c4.jpg',150px,150px) 
-    border-radius: 50%                     
+    @include img('../img/clients/c4.jpg',150px,150px)
+    border-radius: 50%
