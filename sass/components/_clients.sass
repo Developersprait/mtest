@@ -43,7 +43,7 @@
         margin-bottom: 10px
         text-align: left
     &__img
-        float: right    
+        float: right
     &__more
         text-align: left
         a
@@ -51,9 +51,9 @@
             color: #666
     &__box
         display: flex
-        justify-content: end        
+        justify-content: end
     &__name
-        color: #051C51    
+        color: #051C51
         align-self: end
 .sim-slider-arrow-left,
 .sim-slider-arrow-right
@@ -70,7 +70,7 @@
     width: 11px
     height: 38px
     margin-top: 212px
-    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat 
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat
     background-size: contain
 
 .sim-slider-arrow-right
@@ -80,7 +80,7 @@
     width: 11px
     height: 38px
     display: block
-    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat 
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat
     background-size: contain
 
 .sim-slider-arrow-left:hover
@@ -101,3 +101,35 @@
 #sl4
     @include img('../img/clients/c4.jpg',150px,150px)
     border-radius: 50%
+@media screen and (max-width: 770px)
+    .clients
+        &__wrp
+            padding-top: 80px
+        &__title
+            margin-bottom: 70px
+    .sim-slider-arrow-left,
+    .sim-slider-arrow-right
+        display: none
+    .slider
+        padding-left: 0
+@media screen and (max-width: 400px)        
+    .clients
+        height: 700px
+        &__wrp
+            padding-top: 50px
+        &__title
+            margin-bottom: 30px
+            font-size: 33px
+            width: 270px
+    .slider
+        &__item
+            width: 272px
+            height: 481px
+            padding: 25px
+        &__text
+            font-size: 18px 
+            width: 222px  
+            span
+                display: none 
+        &__box
+            margin-top: 50px        

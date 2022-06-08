@@ -35,4 +35,40 @@
 #ab5
     @include img('../img/about/7.png',150px,150px)    
 #ab6
-    @include img('../img/about/ab6.png',150px,150px)                          
+    @include img('../img/about/ab6.png',150px,150px)       
+@media screen and (max-width: 770px)
+    .about
+        height: 1425px  
+        &__wrp
+            padding-top: 80px
+        &__title
+            margin-bottom: 47px
+        &__items
+            grid-template-columns: repeat(2,1fr)   
+        &__item
+            &-text
+                width: 285px     
+@media screen and (max-width: 400px)
+    .about
+        height: 1812px  
+        &__wrp
+            padding-top: 50px
+        &__title
+            margin-bottom: 27px
+        &__items
+            grid-template-columns: repeat(1,1fr)   
+            gap: 20px
+        &__item
+            &-subtitle
+                margin: 10px 0 10px
+                font-size: 20px
+            &-text
+                width: 270px     
+                font-size: 16px     
+            &-img
+                width: 130px
+                height: 130px     
+        #ab1,#ab2,#ab3,#ab4, #ab5, #ab6
+            width: 130px
+            height: 130px                  
+
