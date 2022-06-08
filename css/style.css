@@ -49,7 +49,7 @@ h3 {
 @media screen and (max-width: 992px) {
   .container {
     max-width: 960px;
-    padding: 0 10px 0 20px;
+    padding: 0 10px 0 24px;
   }
 }
 .header {
@@ -757,6 +757,71 @@ h3 {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 770px) {
+  .adv {
+    height: 1951px;
+  }
+  .adv__wrp {
+    display: block;
+  }
+  .adv__title {
+    width: 500px;
+  }
+  .adv__list1 {
+    width: 100%;
+  }
+  .adv__imgs {
+    height: 580px;
+  }
+  .adv__img1 {
+    width: 409px;
+    height: 424px;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .adv__img2 {
+    width: 332px;
+    height: 335px;
+    top: -287px;
+    left: 298px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .adv {
+    height: 1433px;
+    padding-top: 50px;
+  }
+  .adv__title {
+    width: 261px;
+    font-size: 33px;
+    margin-bottom: 30px;
+  }
+  .adv__list1 span, .adv__list span {
+    width: 206px;
+    font-size: 14px;
+  }
+  .adv__list1 li, .adv__list li {
+    margin-bottom: 30px;
+  }
+  .adv__imgs {
+    height: 340px;
+  }
+  .adv__img1 {
+    width: 237px;
+    height: 247px;
+  }
+  .adv__img2 {
+    width: 193px;
+    height: 196px;
+    top: -161px;
+    left: 120px;
+  }
+
+  .check {
+    margin-right: 10px;
+  }
+}
 .form1 {
   height: 450px;
   background: url("../img/form.jpg");
@@ -810,6 +875,49 @@ h3 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 770px) {
+  .form1 {
+    background-position: right;
+    height: 627px;
+  }
+  .form1__wrp {
+    display: block;
+    padding-top: 80px;
+  }
+  .form1__title {
+    margin-bottom: 30px;
+  }
+  .form1__text {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form1 {
+    height: 645px;
+  }
+  .form1__wrp {
+    padding-top: 50px;
+  }
+  .form1__left {
+    width: 272px;
+  }
+  .form1__title {
+    width: 275px;
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+  .form1__text {
+    width: 274px;
+    font-size: 16px;
+  }
+  .form1__right form {
+    width: 281px;
+  }
+  .form1__right form input[type=text],
+.form1__right form input[type=submit] {
+    width: 272px;
+  }
+}
 .sphere {
   height: 1162px;
   padding-top: 100px;
@@ -945,6 +1053,99 @@ h3 {
   left: 550px;
 }
 
+@media screen and (max-width: 770px) {
+  .sphere {
+    height: 1455px;
+  }
+  .sphere__left {
+    width: 232px;
+    margin-right: 0;
+  }
+  .sphere__left-title {
+    width: 232px;
+  }
+  .sphere__mid {
+    margin-right: 13px;
+    margin-left: 45px;
+    height: 1200px;
+  }
+  .sphere__item-right {
+    margin-bottom: 65px;
+  }
+  .sphere__item-text {
+    max-width: 264px;
+    align-self: center;
+    margin-top: 0;
+  }
+  .sphere__item-left {
+    display: block;
+  }
+  .sphere__item-left .sphere__item-text {
+    margin-top: 10px;
+  }
+  .sphere__right-title {
+    width: 266px;
+  }
+
+  .else {
+    left: 210px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sphere {
+    height: 1103px;
+  }
+  .sphere__left {
+    width: 150px;
+    margin-right: 15px;
+  }
+  .sphere__left-title {
+    width: 116px;
+    font-size: 18px;
+  }
+  .sphere__mid {
+    display: none;
+  }
+  .sphere__item-left {
+    width: 150px;
+  }
+  .sphere__item-left .sphere__item-text {
+    width: 140px;
+  }
+  .sphere__item-img {
+    width: 100px;
+    height: 100px;
+  }
+  .sphere__item-text {
+    font-size: 14px;
+  }
+  .sphere__item-right .sphere__item-text {
+    width: 130px;
+    margin-bottom: 45px;
+  }
+  .sphere__right-title {
+    width: 132px;
+    font-size: 18px;
+  }
+  .sphere__right:nth-child(2) {
+    margin-bottom: 50px;
+  }
+
+  .else {
+    margin-top: -38px;
+    font-size: 16px;
+  }
+
+  #s1, #s2, #s3, #s4, #s5 {
+    width: 120px;
+    height: 120px;
+  }
+
+  #s6, #s7, #s8, #s9, #s10 {
+    display: none;
+  }
+}
 .form2 {
   height: 706px;
   background: url("../img/form2.png");

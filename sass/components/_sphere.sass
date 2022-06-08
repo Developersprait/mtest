@@ -48,3 +48,71 @@
 .else
     position: absolute
     left: 550px
+@media screen and (max-width: 770px)
+    .sphere
+        height: 1455px
+        &__left
+            width: 232px
+            margin-right: 0
+            &-title
+                width: 232px
+        &__mid
+            margin-right: 13px
+            margin-left: 45px
+            height: 1200px
+        &__item
+            &-right
+                margin-bottom: 65px
+            &-text
+                max-width: 264px
+                align-self: center
+                margin-top: 0
+            &-left
+                display: block
+            &-left .sphere__item-text
+                margin-top: 10px
+        &__right
+            &-title
+                width: 266px
+    .else
+        left: 210px
+        margin-top: 50px
+@media screen and (max-width: 400px)
+    .sphere
+        height: 1103px
+        &__left
+            width: 150px
+            margin-right: 15px
+            &-title
+                width: 116px
+                font-size: 18px
+        &__mid
+            display: none
+        &__item
+            //margin-bottom: 22px
+            &-left
+                width: 150px
+            &-left .sphere__item-text
+                width: 140px
+            &-img
+                width: 100px
+                height: 100px
+            &-text
+                font-size: 14px
+            &-right .sphere__item-text
+                width: 130px
+                margin-bottom: 45px
+        &__right
+            &-title
+                width: 132px
+                font-size: 18px
+        &__right:nth-child(2)
+            margin-bottom: 50px
+    .else
+        margin-top: -38px
+        font-size: 16px
+    #s1,#s2,#s3,#s4,#s5
+        width: 120px
+        height: 120px
+    #s6,#s7,#s8,#s9,#s10
+        display: none

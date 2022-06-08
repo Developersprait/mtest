@@ -39,4 +39,35 @@
         input[type="submit"]:hover
             background: #c9870e
             cursor: pointer
+@media screen and (max-width: 770px)            
+    .form1
+        background-position: right
+        height: 627px
+        &__wrp
+            display: block
+            padding-top: 80px
+        &__title
+            margin-bottom: 30px    
+        &__text
+            margin-bottom: 35px    
+@media screen and (max-width: 400px)  
+    .form1
+        height: 645px
+        &__wrp
+            padding-top: 50px
+        &__left
+            width: 272px    
+        &__title
+            width: 275px
+            font-size: 33px
+            margin-bottom: 20px   
+        &__text
+            width: 274px
+            font-size: 16px   
+        &__right
+            form
+                width: 281px   
+                input[type="text"], 
+                input[type="submit"]
+                    width: 272px
 
